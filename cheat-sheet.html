@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS Attribute Selectors</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/cheet-sheet-styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <body>
+            <h1>CSS Attribute Selectors</h1>
+            <table>
+                <caption>Attribute's</caption>
+              <tr>
+                  <th class="column-thin">Syntax</th>
+                  <th class="column-thin">Example</th>
+                  <th>Example Explained</th>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr]</td>
+                  <td>a[title]</td>
+                  <td>Matches all &lt;a&gt; elements with a title attribute assigned.</td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr=value]</td>
+                  <td>th[class=column-thin]</td>
+                  <td>Matches all &lt;th&gt; elements with the class attribute having an <span class="highlight">exact</span> value of "column-thin"</td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr~=value]</td>
+                  <td>[class~=column-thin]</td>
+                  <td>Matches all elements that have a class attribute whose value is a whitespace-seperated list of words, one of which is exactly the value "column-thin".  
+                      The difference between ~= and = is an attribute can have many values if = is used all values for that attribute must be entered to work.  Whereas ~= only one value
+                      for the attribute has to match.
+                  </td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr|=value]</td>
+                  <td>[class|=column]</td>
+                  <td>Matches elements that have a class attribute with a value that is exactly column or starts with column and immediatly followed by a hyphen.  Can be useful if you
+                      had several classes with the values column-thin, column-medium, column-large.  The selector would be used to select all that start with column.  </td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr^=value]</td>
+                  <td>[class^=col]</td>
+                  <td>Matches elements that have a class attribute with a value prefixed (preceded) with "col".  This will select all classes that begin with "col" ie <span class="highlight">col</span>umn-thin</td>
+              </tr>
+              <tr class="row-highlight"> 
+                  <td>[attr$=value]</td>
+                  <td>[class$=hin]</td>
+                  <td>Matches elements that have a class attribute with a value suffixed (followed) by "hin".  This will select all classes that end with "hin" ie column-t<span class="highlight">hin</span></td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr*=value]</td>
+                  <td>[class*="mn-th"]</td>
+                  <td>Matches elements that have a class attribute with a value with at least one occurance of value within the string by "mn-th".  This will select all classes that end with "hin" ie colu<span class="highlight">mn-th</span>in</td></td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr operator value i]</td>
+                  <td>[class="COLUMN-THIN" i]</td>
+                  <td>Case Insensitively.  The case of the value is case-insensitive and will match class="column-thin" </td>
+              </tr>
+              <tr class="row-highlight">
+                  <td>[attr operator value s]</td>
+                  <td>[class="COLUMN-THIN" s]</td>
+                  <td>Case Sensitive, the value is compared case-sensitively. </td>
+              </tr>
+              
+              <!--https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors-->
+              <!--https://ddavison.io/css/2014/02/18/effective-css-selectors.html-->
+              <!--https://content.codecademy.com/PRO/independent-practice-projects/html-css-cheat-sheet/example/index.html-->
+              <!--https://drafts.csswg.org/selectors/#attribute-selectors-->
+            </table>
+            <br>
+            <!-- <p>Mulitple Selectors a[href^="https"][href$=".org"]</p>Links that start with "https" and end in ".org" -->
+        </body>
+    </header>
+</body>
+</html>

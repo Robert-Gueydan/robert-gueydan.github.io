@@ -1,0 +1,58 @@
+body {
+    font-family:"Roboto Slab", Roboto, serif;
+    background-color: #eff4ff;
+    color: #555
+}
+
+caption {
+    font-size: 3rem;
+    padding-bottom: .5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+table tr th[class="COLUMN-THIN" I]  {
+    width: 15%;
+}
+
+
+th, tr {
+    height: auto;
+}
+
+tr th {
+    border-bottom: 3px solid #aabde6;
+}
+
+tr td {
+    border-bottom: 1px solid #aabde6;
+}
+
+td {
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    vertical-align: top;
+}
+
+.row-highlight:hover {
+    background-color: #effffa;
+    font-size: 1.2rem;
+    color: #222;
+    border-bottom: 3px solid #aabde6;
+    border-top: 3px solid #aabde6;
+}
+
+.highlight {
+    font-weight: 800;
+    text-decoration: underline;
+}

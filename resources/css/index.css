@@ -1,0 +1,28 @@
+header {
+    background-color: rgb(66,135,245);/*Primary Color*/
+    border:  solid 2px rgb(245,176,66);/*Complentary Color*/
+    border-bottom:  solid 5px rgb(245,176,66);
+    
+    color: whitesmoke;
+    text-align: center;
+}
+
+#brand {
+
+}
+
+.hightlight {
+    color: rgb(104,148,220);/*monochromatic highlight with primary color*/
+}
+
+a {
+    color: #b042f5;
+}
+
+a:visited {
+    color: #f5b042
+}
+a:hover {
+    color: #87f542;
+}
+

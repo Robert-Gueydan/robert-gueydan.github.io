@@ -1,0 +1,86 @@
+/* https://www.youtube.com/watch?v=z62f2k38s64 */
+body {
+    margin: 0;
+}
+/* Universal CSS */
+.container {
+    display: flex;
+    border: 6px solid black;
+    height: 400px;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    /* flex-flow: column wrap; */
+    /* row-gap: 30px; */
+    /* column-gap: 20px; */
+    /* gap: 30px 20px; */
+    /* justify-content: center; */
+    align-items: flex-end;
+    /* align-content: center; */
+    
+}
+
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+    /* width: 6rem; */
+}
+
+/* item # css */
+.item-1 {
+    background-color: #b4bf35;
+    /* padding-bottom: 3rem; */
+    /* flex-basis: 200px; */
+    /* flex: 9 9 200px; */
+    align-self: start;
+
+}
+
+.item-2 {
+    background-color: #b95f21;
+    /* padding-bottom: 5rem; */
+    /* flex: 2 5 300px; */
+    align-self: flex-end;
+}
+
+.item-3 {
+    background-color: #1c4c56;
+    /* padding-bottom: 6rem; */
+    /* order: 1; */
+    /* flex-shrink: 4; */
+    align-self: center;
+}
+
+.item-4 {
+    background-color: #cfb276;
+    align-self: stretch;
+}
+
+.item-5 {
+    background-color: #6b0803;
+    /* flex-grow: 1; */
+    align-self: auto;
+}
+
+.item-6 {
+    background-color:#1c4c56;
+    /* flex-grow: 3; */
+}
+
+.item-7 {
+    background-color: #b95f21;
+    /* order: 2; */
+}
+
+.item-8 {
+    background-color: #01243a;
+}
+
+.item-9 {
+    background-color: #aad041;
+    /* order: 1; */
+}
+
